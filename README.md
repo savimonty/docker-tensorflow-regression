@@ -17,7 +17,6 @@ $ sudo apt update
 
 Install NVIDIA runtime for docker
 ```
-$ sudo apt install -y nvidia-container-toolkit
 $ sudo apt install -y nvidia-container-runtime
 ```
 
