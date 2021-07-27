@@ -1,10 +1,10 @@
-# Run Tensorflow in Docker enabled with Nvidia GPU
+# Run Tensorflow in Docker enabled with NVIDIA GPU
 
-Assumption: You have Ubuntu 18.04 with the proper nvidia drivers installed.
+Assumption: You have Ubuntu 18.04 with the proper NVIDIA drivers installed.
 
 This is simple project to play with regression using tensorflow with GPU enabled.
 
-To enable the nvidia runtime with Docker
+To enable the NVIDIA runtime with Docker
 
 Add the NVIDIA docker repo
 ```
@@ -15,13 +15,13 @@ $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)    && curl -s -L https:/
 $ sudo apt update
 ```
 
-Install nvidia runtime for docker
+Install NVIDIA runtime for docker
 ```
 $ sudo apt install -y nvidia-container-toolkit
 $ sudo apt install -y nvidia-container-runtime
 ```
 
-Add nvidia container runtime config to daemon.json
+Add NVIDIA container runtime config to daemon.json
 ```
 $ sudo tee /etc/docker/daemon.json <<EOF
 {
