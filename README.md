@@ -20,7 +20,7 @@ Install NVIDIA runtime for docker
 $ sudo apt install -y nvidia-container-runtime
 ```
 
-Add NVIDIA container runtime config to daemon.json
+Add NVIDIA container runtime config to docker's daemon.json
 ```
 $ sudo tee /etc/docker/daemon.json <<EOF
 {
