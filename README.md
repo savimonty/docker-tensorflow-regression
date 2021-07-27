@@ -1,6 +1,6 @@
 # Run Tensorflow in Docker enabled with NVIDIA GPU
 
-Assumption: You have Ubuntu 18.04 with the proper NVIDIA drivers installed.
+Assumption: You have Ubuntu 18.04 on a computer with an NVIDIA GPU and with the proper NVIDIA drivers installed.
 
 This is simple project to play with regression using tensorflow with GPU enabled.
 
