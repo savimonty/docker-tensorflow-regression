@@ -1,7 +1,7 @@
 # docker-tensorflow-regression
 Simple project to play with regression using tensorflow with GPU enabled.
 
-To enable GPU with docker and tensorflow:
+To enable nvidia runtime with Docker
 
 ```
 $ sudo apt install -y nvidia-container-toolkit
