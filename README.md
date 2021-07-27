@@ -20,7 +20,7 @@ $ sudo apt update
 $ sudo apt install -y nvidia-docker2
 ```
 ```
-sudo tee /etc/docker/daemon.json <<EOF
+$ sudo tee /etc/docker/daemon.json <<EOF
 {
     "runtimes": {
         "nvidia": {
@@ -30,7 +30,6 @@ sudo tee /etc/docker/daemon.json <<EOF
     }
 }
 EOF
-sudo systemctl restart docker
 ```
 
 ```
