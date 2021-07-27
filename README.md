@@ -4,7 +4,7 @@ Assumption: You have Ubuntu 18.04 with the proper NVIDIA drivers installed.
 
 This is simple project to play with regression using tensorflow with GPU enabled.
 
-To enable the NVIDIA runtime with Docker
+To enable the NVIDIA runtime with Docker ...
 
 Add the NVIDIA docker repo
 ```
