@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  regression:
+    image: tf-gpu
+    build:
+      context: .
+    volumes:
+      - ./shared_volume:/tf/shared_volume
+    runtime: nvidia
+    ports:
+      - 8888:8888
+      - 6006:8888
