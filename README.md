@@ -5,6 +5,7 @@ To enable nvidia runtime with Docker
 
 ```
 $ sudo apt install -y nvidia-container-toolkit
+$ sudo apt install -y nvidia-container-runtime
 ```
 
 ```
@@ -17,6 +18,19 @@ $ sudo apt update
 
 ```
 $ sudo apt install -y nvidia-docker2
+```
+```
+sudo tee /etc/docker/daemon.json <<EOF
+{
+    "runtimes": {
+        "nvidia": {
+            "path": "/usr/bin/nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+EOF
+sudo systemctl restart docker
 ```
 
 ```
