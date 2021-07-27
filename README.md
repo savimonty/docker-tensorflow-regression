@@ -12,7 +12,6 @@ $ sudo apt update
 ```
 
 ```
-$ sudo apt install -y nvidia-docker2
 $ sudo apt install -y nvidia-container-toolkit
 $ sudo apt install -y nvidia-container-runtime
 ```
